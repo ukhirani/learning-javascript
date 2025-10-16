@@ -13,3 +13,14 @@ function callbackfn(name){
 }
 var time = 2000
 setTimeout(callbackfn("Umang"),time);
+
+
+// The event loop monitors the call stack and callback queue. The callback queue is populated via the environment (the web browser) with callback functions of ended events. The event loop:
+
+// Checks if the call stack is empty.
+
+// Checks if there are functions in the callback queue.
+
+// Moves a function from the callback queue to the call stack only when the call stack is empty.
+
+// Having an empty call stack doesn’t mean the program ends. The program ends only when all events are ended with an empty call stack and empty callback queue.
